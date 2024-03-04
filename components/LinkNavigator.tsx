@@ -1,3 +1,4 @@
+import Link from "next/link"
 
 interface Props {
     name: string,
@@ -6,5 +7,5 @@ interface Props {
 
 export default function LinkNavigator ({links, name}: Props): JSX.Element {
 
-    return <a rel="stylesheet" href={links}>{name}</a>
+    return <Link rel="stylesheet" href={links}>{name}</Link>
 }
