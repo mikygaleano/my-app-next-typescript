@@ -1,7 +1,4 @@
-import { Loading } from "@/app/pokeDex/Loading";
 import { Pokemons } from "@/types/typesGlobal";
-import { Suspense } from "react";
-import ButtonPagination from "./ButtonPagination";
 
 type Props = {
     dataPokemons: Pokemons[] | [];
@@ -9,7 +6,6 @@ type Props = {
 
 export default function CardAllPokemons ({ dataPokemons }: Props) {
 
-        
            
     return (
         <>
@@ -25,7 +21,7 @@ export default function CardAllPokemons ({ dataPokemons }: Props) {
                                 <span className="max-w-[80px] text-sm">{type}</span>
                             </footer>
                         </article>
-               ))
+                ))
             }
         </>
     )
